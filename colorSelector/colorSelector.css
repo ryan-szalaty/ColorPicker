@@ -1,0 +1,109 @@
+.body {
+    font-family: Ubuntu;
+}
+
+.main {
+    width: 100vw;
+}
+
+.rgbSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(8, 112, 209);
+    height: 35vh;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+}
+
+button {
+    color: rgb(8, 112, 209);
+    outline: none;
+}
+
+.hard {
+    background-color: rgb(8, 112, 209);
+    color: white;
+}
+
+.rgbSection h1 {
+    margin: 0px auto;
+    font-size: 50px;
+}
+
+.rgbSection h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 0px auto;
+}
+
+.modeSelection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 5vh;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: inherit;
+    font-weight: bold;
+    display: inline;
+    margin: auto 5px;
+    color: rgb(8, 112, 209);
+    transition: all 0.2s;
+}
+
+.selected {
+    background: rgb(8, 112, 209);
+    color: white;
+}
+
+button:hover {
+    background: rgb(8, 112, 209);
+    color: white;
+    cursor: pointer;
+}
+
+#alert {
+    display: none;
+}
+
+.gameArea {
+    background-color: black;
+    height: 60vh;
+    padding-top: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+}
+
+.grid div {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    cursor: pointer;
+}
+
+.item {
+    background: white;
+    border-radius: 15%;
+    width: 90%;
+    height: 90%;
+}
+
+span {
+    text-transform: uppercase;
+}
